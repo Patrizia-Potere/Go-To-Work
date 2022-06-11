@@ -1,0 +1,85 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height:100%;
+    min-height:100%;
+}
+/* General setting for body page with background and font-family */
+body {
+    background-image: url("sky.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size:cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    color:rgb(0, 64, 128);
+    margin: 0;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+/* User section fron input */
+#user {
+    margin:80px auto;
+    width:60%;
+}
+
+#celsius {
+    margin-left:5%;
+}
+
+#celsius label {
+    background-color:white;
+    width:75%;
+    height: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    display:inline-block;
+    vertical-align: top;
+    margin: 0px 10px 30px 0px;
+    padding:16px;
+}
+
+#celsius input {
+    height:50px;
+    width:20%;
+    color:rgb(0, 64, 128);
+    font-size:15px;
+    font-weight: bold;
+}
+
+#celsius select {
+    height:50px;
+    width:20%;
+    color:rgb(0, 64, 128);
+    font-size: 15px;
+    font-weight: bold;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+/* Submit button */
+#btn {
+    background-color: white;
+    color:rgb(0, 64, 128);
+    font-size: 15px;
+    font-weight: bold;
+    height:50px;
+    width:15%;
+    border: none;
+    margin-left: 5%;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+/* Go To Work outcome on HTML page */
+#demo {
+    text-align: center;
+    font-size: 50px;
+    padding:10px;
+}
+/* Responsive  */
+@media (max-width:960px) {
+    #user {width:80%;}
+    #celsius label, #btn, #celsius select {font-size: 13px;};
+    #demo {font-size:40px;}
+}
